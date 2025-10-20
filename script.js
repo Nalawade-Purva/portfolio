@@ -571,12 +571,9 @@ You're one step closer to hiring your next cybersecurity star! The download will
                     
                     // Wait a moment before starting the download
                     setTimeout(() => {
-                        // Extract the URL from the fileSystem content for 'resume.pdf'
-                        const resumeFileContent = fileSystem['/']['contents']['resume.pdf']['content'];
-                        const urlMatch = resumeFileContent.match(/(https?:\/\/[^\s]+)/); // Regex to find a URL
-                        const resumeDownloadUrl = urlMatch ? urlMatch[0] : 'Purva_Nalawade_Resume.pdf'; // Fallback to local name if URL not found
-
-                        downloadFile(resumeDownloadUrl, 'Purva_Nalawade_Resume.pdf');
+                        // This line has been changed to directly reference the PDF file
+                        // from the root of your GitHub Pages deployment.
+                        downloadFile('Purva_Nalawade_Resume.pdf', 'Purva_Nalawade_Resume.pdf');
                     }, 1000); // 1-second delay
                     return; // Exit here since we don't want to call typeOutput again
 
