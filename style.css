@@ -1,0 +1,503 @@
+/* Basic Reset & Font Import (from index.html) */
+/*
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+*/
+
+/* --- CSS Variables for Theming --- */
+:root {
+    --terminal-bg: #1a1a1a; /* Dark charcoal for background, less harsh than pure black */
+    --terminal-text: #e0e0e0; /* Off-white/light gray for general text, much easier on the eyes */
+    --terminal-border: #00e600; /* Vibrant green for accents/scrollbar */
+    --terminal-border-rgb: 0, 230, 0; /* RGB values for glow effects */
+    --prompt-color: #00ffff; /* Default cyan for main prompt elements */
+    --welcome-color: #a0a0ff; /* Soft blue/purple for welcome messages */
+    --command-highlight: #ffdd55; /* Soft yellow for command highlights */
+    --link-color: #77ccff; /* Lighter blue for clickable links */
+    --error-color: #ff5555; /* Classic red for errors */
+
+    /* Banner-specific colors - now more distinct */
+    --banner-bg: #2b2b2b; /* A bit lighter than terminal background for contrast */
+    --banner-text: #dddddd; /* Clear white/light grey for banner text */
+    --banner-border-color: #00cc00; /* Slightly darker green for banner border */
+
+    /* New distinct colors for prompt components */
+    --prompt-user-color: var(--terminal-text); /* White/light gray */
+    --prompt-at-color: var(--terminal-border); /* Vibrant green for '@' */
+    --prompt-host-color: var(--link-color); /* Lighter blue for hostname */
+    --prompt-dir-color: #ffaa55; /* Orange/Gold for directories, stands out */
+    --prompt-dollar-color: var(--terminal-border); /* Vibrant green for '$' */
+
+    /* New colors for ls command output */
+    --directory-color: var(--prompt-dir-color); /* Match directory color in prompt */
+    --file-color: var(--terminal-text); /* Standard text color for files */
+    --executable-color: #ff00ff; /* Magenta for simulated executables (for future use) */
+}
+
+/* Override for Light Theme */
+.theme-light {
+    --terminal-bg: #f0f0f0;
+    --terminal-text: #333333;
+    --terminal-border: #aaaaaa;
+    --terminal-border-rgb: 170, 170, 170; /* RGB values for glow effects */
+    --prompt-color: #0000ff;
+    --welcome-color: #0000bb;
+    --command-highlight: #ff6600;
+    --link-color: #0000ff;
+    --error-color: #cc0000;
+
+    --banner-bg: #e0e0e0;
+    --banner-text: #555555;
+    --banner-border-color: #cccccc;
+
+    --prompt-user-color: #333333;
+    --prompt-at-color: #666666;
+    --prompt-host-color: #0000ff;
+    --prompt-dir-color: #8800cc; /* Purple */
+    --prompt-dollar-color: #333333;
+
+    --directory-color: #8800cc;
+    --file-color: #333333;
+    --executable-color: #009900;
+}
+
+/* Override for Blue Theme (Dracul-inspired) */
+.theme-blue {
+    --terminal-bg: #282a36; /* Dracul background */
+    --terminal-text: #f8f8f2; /* Dracul foreground */
+    --terminal-border: #6272a4; /* Dracul comment color */
+    --terminal-border-rgb: 98, 114, 164; /* RGB values for glow effects */
+    --prompt-color: #bd93f9; /* Dracul purple */
+    --welcome-color: #f1fa8c; /* Dracul yellow */
+    --command-highlight: #ff79c6; /* Dracul pink */
+    --link-color: #50fa7b; /* Dracul green */
+    --error-color: #ff5555; /* Dracul red */
+
+    --banner-bg: #1a1e2a; /* Slightly darker Dracul for banner */
+    --banner-text: #f8f8f2;
+    --banner-border-color: #44475a; /* Dracul comment color for banner border */
+
+    --prompt-user-color: #f8f8f2;
+    --prompt-at-color: #8be9fd; /* Dracul light blue */
+    --prompt-host-color: #50fa7b; /* Dracul green */
+    --prompt-dir-color: #ff79c6; /* Dracul pink */
+    --prompt-dollar-color: #8be9fd;
+
+    --directory-color: #ff79c6;
+    --file-color: #f8f8f2;
+    --executable-color: #bd93f9;
+}
+
+
+/* --- General Body Styles --- */
+html {
+    font-size: 18px; /* Base font size increased for overall larger text */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Prevent body scrolling */
+    cursor: text;
+    background-color: var(--terminal-bg);
+    color: var(--terminal-text);
+    font-family: 'Fira Code', 'Roboto Mono', monospace;
+    position: relative; /* For CRT effect pseudo-elements */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    /* Text clarity fix: Reduced text-shadow for sharpness */
+    text-shadow: 0 0 1px var(--terminal-text), /* Sharp base */
+                 0 0 4px rgba(var(--terminal-border-rgb), 0.5); /* Subtle glow with accent color */
+
+    /* Subtle flicker animation for the entire body */
+    animation: flicker 0.2s infinite alternate; /* Slower, more perceptible flicker */
+    letter-spacing: 0.02em; /* Added for terminal feel */
+}
+
+/* Flicker effect for the entire body to simulate old CRT */
+@keyframes flicker {
+    0% { opacity: 0.99; } /* Slight dip */
+    50% { opacity: 1; }
+    100% { opacity: 0.99; }
+}
+
+
+/* Hide the terminal container by default */
+.hidden {
+    display: none !important;
+}
+
+/* --- CRT Screen Effect Overlays --- */
+body::before { /* Scanlines and subtle color aberration */
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.15) 50%), /* Scanlines: lighter, less opaque */
+        linear-gradient(90deg, rgba(255, 0, 0, 0.02), rgba(0, 255, 0, 0.005), rgba(0, 0, 255, 0.02)); /* RGB glow: even subtler */
+    z-index: 100;
+    pointer-events: none;
+    opacity: 0.15; /* Overall reduced opacity, but increased for scanlines */
+    mix-blend-mode: overlay;
+    background-size: 100% 3px, 3px 100%; /* Thicker scanlines */
+}
+
+body::after { /* Vignette effect (darker edges) */
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 65%, rgba(0,0,0,0.85) 100%); /* Stronger vignette effect, slightly wider fade */
+    z-index: 101;
+    pointer-events: none;
+    opacity: 0.85; /* Increased opacity for more noticeable vignette */
+}
+
+
+/* --- Terminal Container Styling (Full Screen) --- */
+#terminal-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--terminal-bg);
+    border: none;
+    box-shadow: none;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    overflow-y: auto; /* Essential for scrolling terminal content */
+    z-index: 1; /* Keep it below the CRT overlay effects */
+
+    /* Adding a subtle border and inner glow to feel like an embedded screen */
+    border-radius: 3px; /* Slightly rounded corners */
+    box-shadow: inset 0 0 8px rgba(0, 255, 0, 0.08), 0 0 4px rgba(0, 255, 0, 0.04); /* Softer inner/outer glow */
+}
+
+/* Scrollbar Styling (Optional, for a cleaner look) */
+#terminal-container::-webkit-scrollbar {
+    width: 8px;
+}
+#terminal-container::-webkit-scrollbar-track {
+    background: var(--terminal-bg);
+}
+#terminal-container::-webkit-scrollbar-thumb {
+    background: var(--terminal-border); /* Uses accent green */
+    border-radius: 4px;
+}
+#terminal-container::-webkit-scrollbar-thumb:hover {
+    background: var(--prompt-color); /* Hover turns cyan */
+}
+
+
+/* --- Terminal Banner Styling --- */
+#terminal-banner {
+    background-color: var(--banner-bg); /* Use distinct banner background */
+    border-bottom: 1px solid var(--banner-border-color); /* Distinct border color */
+    padding: 12px 20px; /* Increased padding for a larger banner */
+    margin: -10px -10px 10px -10px; /* Adjust to fill padding area */
+    font-size: 1.1em; /* This will now be 1.1 * 18px = 19.8px, making it larger */
+    color: var(--banner-text); /* Use distinct banner text color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    /* Add a subtle inset shadow to make it look slightly recessed */
+    box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 3px 3px 0 0; /* Match terminal container top radius */
+}
+.banner-left, .banner-right {
+    white-space: nowrap;
+    /* Apply a distinct text shadow for banner text to make it pop but stay sharp */
+    text-shadow: 0 0 1px var(--banner-text), 0 0 3px rgba(var(--terminal-border-rgb), 0.5); /* Subtle glow with green accent */
+}
+
+
+/* --- Output Area Styling --- */
+#output {
+    white-space: pre-wrap; /* Preserve whitespace and wrap text */
+    word-break: break-all; /* Break long words */
+    margin: 0;
+    padding-bottom: 0;
+    flex-grow: 1;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    line-height: 1.4;
+    font-size: 1em; /* This will inherit the 18px from html */
+}
+
+/* Blinking Caret - Block Style */
+.caret {
+    animation: blink 1s step-end infinite;
+    background-color: var(--terminal-text); /* Use text color as background */
+    color: var(--terminal-bg); /* Text inside caret is background color */
+    display: inline-block;
+    width: 0.6em; /* Adjust width as needed for block */
+    text-align: center;
+    vertical-align: middle; /* Ensures caret aligns well with text */
+    line-height: 1; /* Ensures its height matches line-height of text */
+}
+
+@keyframes blink {
+    from, to {
+        opacity: 0; /* Blink by changing opacity of the block */
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Welcome Message Styling */
+.welcome-message {
+    color: var(--welcome-color); /* Soft blue/purple */
+}
+
+/* Prompt component specific styling for color variety */
+.prompt-user { color: var(--prompt-user-color); }
+.prompt-at { color: var(--prompt-at-color); }
+.prompt-host { color: var(--prompt-host-color); }
+.prompt-dir { color: var(--prompt-dir-color); }
+.prompt-dollar { color: var(--prompt-dollar-color); }
+
+
+/* Highlight for commands within help/output */
+.command-highlight {
+    color: var(--command-highlight); /* Soft yellow */
+}
+
+/* Styling for errors and warnings */
+.error-message {
+    color: var(--error-color); /* Red */
+    font-weight: bold;
+}
+.warning-message {
+    color: #ffd700; /* Gold/Yellow for warnings */
+    font-weight: bold;
+}
+
+/* Link Styling */
+a {
+    color: var(--link-color); /* Lighter blue */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--prompt-color); /* Hover turns cyan */
+}
+
+/* LS command specific styling for better distinction */
+.ls-directory {
+    color: var(--directory-color); /* Orange/Gold */
+    font-weight: bold;
+}
+.ls-file {
+    color: var(--file-color); /* Standard text color */
+}
+.ls-link { /* If you want to style a specific link in ls differently */
+    color: var(--link-color);
+}
+
+/* ======================================================== */
+/* === NEW STYLES FOR COLORFUL CONTENT ==================== */
+/* ======================================================== */
+.content-title {
+    color: var(--command-highlight);
+    font-weight: bold;
+}
+.content-header {
+    color: var(--prompt-color); /* Cyan */
+}
+.content-bullet {
+    color: var(--prompt-at-color); /* Green or light blue depending on theme */
+}
+.content-tech {
+    color: var(--prompt-dir-color); /* Orange/Gold or Pink */
+}
+/* ======================================================== */
+
+
+/* Sudo Shutdown Message Styling */
+#sudo-shutdown-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Ensures text inside is centered */
+    font-size: 1.5em; /* Scales with the new base font size */
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 102; /* Ensure it's on top of CRT effects */
+    /* text-shadow handled by h1 and p children for glitch effect */
+}
+#sudo-shutdown-message h1 {
+    font-size: 2em; /* Scales with parent font-size (1.5em from #sudo-shutdown-message) */
+    margin-bottom: 15px;
+}
+#sudo-shutdown-message p {
+    margin-bottom: 10px;
+}
+/* Glitch effect for shutdown message text */
+#sudo-shutdown-message h1,
+#sudo-shutdown-message p {
+    animation: text-glitch 0.2s infinite alternate;
+    filter: blur(0.5px) grayscale(20%); /* Added subtle blur and grayscale */
+}
+
+@keyframes text-glitch {
+    0% { transform: translate(0, 0); text-shadow: 0 0 5px red; }
+    20% { transform: translate(-2px, 2px); text-shadow: 2px 2px 5px red; }
+    40% { transform: translate(1px, -1px); text-shadow: -1px -1px 5px red; }
+    60% { transform: translate(-1px, 1px); text-shadow: 1px 1px 5px red; }
+    80% { transform: translate(2px, -2px); text-shadow: -2px -2px 5px red; }
+    100% { transform: translate(0, 0); text-shadow: 0 0 5px red; }
+}
+
+
+/* --- NoScript Message Styling --- */
+#noscript-message {
+    text-align: center;
+    padding: 40px;
+    background-color: #333;
+    color: #ff0000;
+    border: 2px dashed #ff0000;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 103; /* Ensure it's on top of everything if JS is off */
+    text-shadow: none; /* Remove glow from noscript content */
+}
+
+#noscript-message h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+#noscript-message p {
+    margin-top: 25px;
+    font-size: 1.1em;
+}
+
+#noscript-message pre {
+    color: #00ffff;
+    font-size: 0.9em;
+    line-height: 1.2;
+    margin: 30px auto;
+    white-space: pre;
+    text-align: left;
+    max-width: fit-content;
+    opacity: 0.8;
+}
+
+
+/* --- Responsive adjustments --- */
+@media (max-width: 768px) {
+    html {
+        font-size: 16px; /* Slightly smaller base font for medium screens */
+    }
+    #terminal-container {
+        padding: 8px;
+    }
+    #terminal-banner {
+        margin: -8px -8px 8px -8px;
+        padding: 8px 15px; /* Adjusted padding for smaller screens */
+        font-size: 1em; /* Adjusted for smaller screens relative to new html font-size */
+    }
+    #noscript-message {
+        width: 95%;
+        padding: 25px;
+    }
+    #noscript-message h1 {
+        font-size: 1.5em;
+    }
+    #noscript-message p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px; /* Even smaller base font for small screens */
+    }
+    #terminal-container {
+        padding: 5px;
+    }
+    #terminal-banner {
+        margin: -5px -5px 5px -5px;
+        font-size: 0.9em; /* Further adjusted for very small screens */
+        padding: 5px 10px; /* Further adjusted padding for very small screens */
+    }
+    #noscript-message {
+        padding: 15px;
+    }
+    #noscript-message h1 {
+        font-size: 1.2em;
+    }
+    #noscript-message p {
+        font-size: 0.9em;
+    }
+    #noscript-message pre {
+        font-size: 0.7em;
+    }
+    #output { /* Keep default if no specific override */
+        font-size: 1em;
+    }
+    .prompt {
+        font-size: 0.9em;
+    }
+    #sudo-shutdown-message {
+        font-size: 1.2em; /* Adjusted for small screens */
+    }
+    #sudo-shutdown-message h1 {
+        font-size: 1.8em;
+    }
+    .prompt {
+  color: #00ff00;
+  font-weight: 600;
+}
+
+.cmd {
+  color: #00bcd4;
+  font-weight: 500;
+}
+
+.color-green { color: #00ff99; }
+.color-cyan { color: #00ffff; }
+.color-yellow { color: #fff176; }
+.color-magenta { color: #ff80ab; }
+.color-red { color: #ff5555; }
+
+a {
+  color: #4fc3f7;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+}

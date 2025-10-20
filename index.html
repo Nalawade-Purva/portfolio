@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purva - Terminal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- This section will be hidden by default with CSS and shown by JavaScript -->
+    <div id="terminal-container" class="hidden">
+        <div id="terminal-banner">
+            <!-- Dynamic content (hostname, time) will be inserted here by JS -->
+        </div>
+        <!-- This is where all history (ASCII, welcome, commands, output, and current input) will go -->
+        <pre id="output"></pre> 
+        <!-- We keep a hidden input for better mobile support / copy-paste functionality -->
+        <!-- The actual input is simulated in #output -->
+    </div>
+
+    <!-- This content will ONLY be displayed if JavaScript is disabled -->
+    <noscript>
+        <div id="noscript-message">
+            <h1>Common now mate, don't pen test me.</h1>
+            <p>Switch Javascript back on.</p>
+            <pre>
+                ┏┳ • ┏┓• ┓ ┏┓ • •
+                ┃┏┓┏┓┓┏┏┓╋
+                ┗┓┓┏┓┏┓┣┓
+                ┗┓┏┓┓┏┓┓
+                ┗┛┗┻┛┃┗┫┗┛┗
+                ┗┛┗┻┗┛┗┗
+                ┛ ┛ ┛
+            </pre>
+            
+            <p>Please enable JavaScript to view this interactive portfolio.</p>
+        </div>
+    </noscript>
+
+    <!-- Your JavaScript file goes here -->
+    <script src="script.js"></script>
+</body>
+</html>
