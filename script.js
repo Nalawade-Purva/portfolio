@@ -363,7 +363,7 @@ Type 'help' for a list of commands, or 'ls' to explore the file system.
 
     // --- Get Current Prompt Text (now with distinct spans for styling) ---
     function getPrompt() {
-        return `<span class="prompt-user">guest</span><span class="prompt-at">@</span><span class="prompt-host">purva@nalawade-purva.github.io</span>:<span class="prompt-dir">${currentDirectory}</span><span class="prompt-dollar">$</span>`;
+        return `<span class="prompt-user">guest</span><span class="prompt-at">@</span><span class="prompt-host">nalawade-purva.github.io</span>:<span class="prompt-dir">${currentDirectory}</span><span class="prompt-dollar">$</span>`;
     }
 
     // --- Get Content from Simulated File System ---
