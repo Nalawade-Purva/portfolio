@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let isWaitingForPassword = false;
     let sudoCommandPending = '';
     const SUDO_PASSWORD = "902581"; // !!! YOUR SUDO PASSWORD !!! - CHANGE THIS!
-    let isAuthenticatedSudoSession = false; // NEW: Tracks if sudo session is active
+    let isAuthenticatedSudoSession = false; // NEW: Tracks if sudo session is act
 
 
     console.log(`%cPassword: ${SUDO_PASSWORD}`, 'color: red; font-size: 20px; font-weight: bold;');
@@ -65,16 +65,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 'about.txt': {
                     type: 'file',
                     content: `
-<span class="content-title">Purva Nalawade - Cybersecurity & AI Enthusiast</span>
-<span class="content-tech">Cybersecurity & AI Enthusiast | Red Team Intern at DeepCytes | B.Tech in Cybersecurity, SAKEC (2027)</span>
+<span class="content-title">Purva Nalawade</span>
+<span class="content-tech">B.Tech Cybersecurity | CEH v13 | ISC2 CC</span>
 
-Hi, I’m Purva Nalawade, a passionate cybersecurity and AI enthusiast currently pursuing a B.Tech in Cybersecurity from Shah & Anchor Kutchhi Engineering College (SAKEC), Mumbai.
+<span class="content-header">Cyber Security Intern:</span> Maharashtra Cyber  
+<span class="content-header">Project Intern:</span> CyberPeace Foundation (Centre of Excellence)  
+<span class="content-header">Former Red Team Intern:</span> DeepCytes (UK)
 
-I specialize in red teaming, ethical hacking, and AI-assisted threat detection, and I’m currently interning as a Red Team Intern at DeepCytes.
+I work at the intersection of offensive security and secure system design.  
+My experience includes web application VAPT aligned with OWASP standards, vulnerability validation, structured security reporting, and exposure to real-world cyber defense workflows.
 
-My experience spans across hackathons, CTFs, internships, and research projects focusing on phishing detection, CCTV infrastructure security, and full-stack development.
+Previously, I worked as a <span class="content-header">Full Stack Development Intern</span> at Millennium Enterprise, where I built secure end-to-end web applications and implemented authentication, input validation, and backend logic with security-first practices.
 
-I aim to build a career in cyber threat intelligence and offensive security, combining technical depth with real-world impact.
+<span class="content-header">Achievements:</span>  
+<span class="content-bullet">*</span> Hackathon Finalist & National-Level Security Challenge Winner  
+<span class="content-bullet">*</span> Contributor to the book <span class="content-tech">Intelligent Forensic</span>
+
+<span class="content-header">Currently Focused On:</span>  
+<span class="content-tech">Red Teaming • Web Application Security • Threat Analysis • Secure Architecture</span>
 `
                 },
                 'education.txt': {
@@ -90,12 +98,27 @@ I aim to build a career in cyber threat intelligence and offensive security, com
                     type: 'file',
                     content: `
 <span class="content-title">SKILLS</span>
-  <span class="content-header">Programming:</span> <span class="content-tech">C, Python, Bash, SQL</span>
-  <span class="content-header">Platforms & OS:</span> <span class="content-tech">Linux, Windows</span>
-  <span class="content-header">Tools & Security:</span> <span class="content-tech">Wireshark, Metasploit, Nmap, Git & GitHub, Autopsy</span>
-  <span class="content-header">Web Development:</span> <span class="content-tech">HTML, CSS, JavaScript, Next.js, React</span>
-  <span class="content-header">Cybersecurity & AI:</span> <span class="content-tech">Red Teaming, Ethical Hacking (CEH), Network Security, IDS/IPS, Threat Intelligence, OSINT, Digital Forensics, AI in Cybersecurity</span>
-  <span class="content-header">Soft Skills:</span> <span class="content-tech">Teamwork, Communication, Leadership, Adaptability, Problem-Solving, Time Management</span>
+
+<span class="content-header">Programming:</span> 
+<span class="content-tech">C • Python • Bash • SQL</span>
+
+<span class="content-header">Platforms & OS:</span> 
+<span class="content-tech">Linux (Kali/Ubuntu) • Windows</span>
+
+<span class="content-header">Security Tools:</span> 
+<span class="content-tech">Nmap • Wireshark • Metasploit • Burp Suite • Autopsy • Git & GitHub</span>
+
+<span class="content-header">Web Security & Red Team:</span> 
+<span class="content-tech">Web Application VAPT (OWASP-based) • Vulnerability Validation • Basic Exploitation & Enumeration • Structured Security Reporting</span>
+
+<span class="content-header">Cybersecurity Domains:</span> 
+<span class="content-tech">Network Security Fundamentals • IDS/IPS Concepts • Threat Intelligence • OSINT • Digital Forensics • AI Applications in Cybersecurity</span>
+
+<span class="content-header">Web Development:</span> 
+<span class="content-tech">HTML • CSS • JavaScript • React • Next.js • Secure Authentication & Input Validation</span>
+
+<span class="content-header">Soft Skills:</span> 
+<span class="content-tech">Leadership • Communication • Analytical Thinking • Adaptability • Team Collaboration • Time Management</span>
 `
                 },
                 'contact.txt': {
@@ -187,32 +210,62 @@ I aim to build a career in cyber threat intelligence and offensive security, com
                 'internships': {
                     type: 'directory',
                     contents: {
+                        'maharashtra_cyber.txt': {
+                            type: 'file',
+                            content: `
+<span class="content-title">Cyber Security Intern — Maharashtra Cyber (January 2026 – Present)</span>
+  - <span class="content-header">Description:</span> Gaining hands-on exposure to state-level cyber defense operations, SOC architecture, and enterprise threat monitoring workflows.
+  - <span class="content-header">Key Highlights:</span>
+    <span class="content-bullet">*</span> Studying Security Operations Center (SOC) architecture and incident response lifecycle processes.
+    <span class="content-bullet">*</span> Gaining exposure to enterprise SIEM monitoring using IBM QRadar for real-time threat detection.
+    <span class="content-bullet">*</span> Exploring Attack Surface Management (ASM) methodologies to understand digital footprint mapping and external risk visibility.
+    <span class="content-bullet">*</span> Analyzing security telemetry and log patterns for threat identification and escalation workflows.
+  - <span class="content-header">Skills Gained:</span> <span class="content-tech">SOC Architecture, SIEM Fundamentals (QRadar), Attack Surface Management, Security Telemetry Analysis</span>
+  - <span class="content-header">Location:</span> Mumbai
+  - <span class="content-header">Status:</span> Ongoing
+`
+                        },
+                        'coe_project_intern.txt': {
+                            type: 'file',
+                            content: `
+<span class="content-title">Project Intern — CyberPeace Foundation (Centre of Excellence) (January 2026 – Present)</span>
+  - <span class="content-header">Description:</span> Contributing to cybersecurity and AI-safety research initiatives, including development of AI-AwareX — an explainable, deterministic cybersecurity risk detection platform.
+  - <span class="content-header">Key Highlights:</span>
+    <span class="content-bullet">*</span> Designed modular system architecture with a central routing layer and stateless detection modules.
+    <span class="content-bullet">*</span> Implemented heuristic-based PII, AI-text likelihood, and image manipulation detection workflows.
+    <span class="content-bullet">*</span> Built deterministic risk scoring logic with unified reporting and database-backed audit persistence.
+    <span class="content-bullet">*</span> Contributed to structured documentation and AI governance design discussions.
+  - <span class="content-header">Skills Gained:</span> <span class="content-tech">Secure Architecture Design, Deterministic Detection Systems, AI Safety Engineering, Risk Modeling</span>
+  - <span class="content-header">Location:</span> Remote
+  - <span class="content-header">Status:</span> Ongoing
+`
+                        },
                         'deepcytes_redteam.txt': {
                             type: 'file',
                             content: `
-<span class="content-title">Red Team Intern — DeepCytes Cyber Labs (July 2025 – Present)</span>
-  - <span class="content-header">Description:</span> Currently working as a Red Team Intern at DeepCytes, focusing on offensive security assessments, vulnerability exploitation, and adversary simulation. The internship emphasizes advanced red teaming methodologies, threat intelligence, and reporting.
+<span class="content-title">Red Team Intern — DeepCytes Cyber Labs (July 2025 – December 2025)</span>
+  - <span class="content-header">Description:</span> Worked as a Red Team Intern focusing on web application security testing, vulnerability validation, and structured security reporting aligned with OWASP standards.
   - <span class="content-header">Key Highlights:</span>
-    <span class="content-bullet">*</span> Perform penetration testing and red team exercises on simulated enterprise environments.
-    <span class="content-bullet">*</span> Use tools like Burp Suite, Nmap, Metasploit, and Wireshark for reconnaissance and exploitation.
-    <span class="content-bullet">*</span> Contribute to internal research and automation of attack simulation scripts.
-    <span class="content-bullet">*</span> Collaborate with fellow interns on advanced threat modeling and OSINT-driven reconnaissance.
-  - <span class="content-header">Skills Gained:</span> <span class="content-tech">Red Teaming, Penetration Testing, Threat Intelligence, OSINT, Network Security</span>
+    <span class="content-bullet">*</span> Performed web application VAPT including authentication testing, input validation flaws, and business logic analysis.
+    <span class="content-bullet">*</span> Used Burp Suite, Nmap, Metasploit, and Wireshark for reconnaissance and controlled exploitation.
+    <span class="content-bullet">*</span> Documented findings with risk ratings, proof-of-concept steps, and remediation guidance.
+    <span class="content-bullet">*</span> Participated in controlled attack simulation exercises within lab environments.
+  - <span class="content-header">Skills Gained:</span> <span class="content-tech">Web Application VAPT, Vulnerability Assessment, Exploitation Basics, Security Reporting, Reconnaissance</span>
   - <span class="content-header">Location:</span> Remote / Hybrid
-  - <span class="content-header">Status:</span> Ongoing
+  - <span class="content-header">Status:</span> Completed
 `
                         },
                         'millennium_fullstack.txt': {
                             type: 'file',
                             content: `
 <span class="content-title">Full Stack Development Intern — Millennium Enterprise (March 2025 – June 2025)</span>
-  - <span class="content-header">Description:</span> Completed a 3-month internship at Millennium Enterprise, where I designed and developed dynamic web applications using the MERN stack. The internship provided practical exposure to front-end and back-end development, version control, and deployment.
+  - <span class="content-header">Description:</span> Completed a 3-month internship building secure end-to-end web applications with a security-first development approach.
   - <span class="content-header">Key Highlights:</span>
-    <span class="content-bullet">*</span> Built responsive web interfaces with HTML, CSS, JavaScript, React, and Node.js.
-    <span class="content-bullet">*</span> Developed secure REST APIs and integrated them with MongoDB databases.
-    <span class="content-bullet">*</span> Worked in an agile team environment, following SDLC principles from design to deployment.
-    <span class="content-bullet">*</span> Enhanced understanding of UI/UX principles and web security best practices.
-  - <span class="content-header">Skills Gained:</span> <span class="content-tech">Full Stack Development, MERN Stack, REST APIs, Git & GitHub, Web Security</span>
+    <span class="content-bullet">*</span> Built responsive web interfaces using HTML, CSS, JavaScript, and React.
+    <span class="content-bullet">*</span> Developed REST APIs and backend logic using Node.js and MongoDB.
+    <span class="content-bullet">*</span> Implemented authentication flows, input validation, and secure session handling.
+    <span class="content-bullet">*</span> Applied secure coding practices to reduce common vulnerabilities (XSS, injection, improper validation).
+  - <span class="content-header">Skills Gained:</span> <span class="content-tech">Full Stack Development, Secure Coding Practices, REST APIs, Authentication Design, Git & GitHub</span>
   - <span class="content-header">Location:</span> Remote / Hybrid
   - <span class="content-header">Status:</span> Completed
 `
@@ -229,6 +282,29 @@ I aim to build a career in cyber threat intelligence and offensive security, com
   - <span class="content-header">Award:</span> Hackathon Finalist (Top 10) - Idea Hackathon
   - <span class="content-header">Description:</span> Developed a centralized platform to detect and coordinate the takedown of phishing domains targeting public sector banks. The solution integrates AI-based phishing detection, real-time reporting, and global registrar coordination to streamline cross-jurisdictional takedown efforts and reduce response time.
   - <span class="content-header">Tools & Technologies:</span> <span class="content-tech">Python, Flask, scikit-learn, WHOIS/DNS lookups, Passive DNS, AbuseIPDB API, OTX Threat Feeds, Celery, Redis, GitHub</span>
+`
+                        },
+                        'guardrailx.txt': {
+                            type: 'file',
+                            content: `
+<span class="content-title">GuardrailX - Defense-in-Depth Governance Layer for Generative AI</span>
+  - <span class="content-header">Description:</span> Built a programmable safety framework that sits between users and Large Language Models (LLMs) to enforce policy, detect jailbreak attempts, prevent sensitive data leakage, and log auditable safety decisions.
+  - <span class="content-header">Core Features:</span> Prompt/response risk inspection, jailbreak detection, sanitization controls, automated LLM red-team simulator, bypass rate measurement, latency tracking, safety scorecard generation.
+  - <span class="content-header">Architecture:</span> Modular guardrail engine + adversarial testing layer + audit API. Compares raw vs protected model behavior to generate measurable safety metrics.
+  - <span class="content-header">Focus:</span> <span class="content-tech">AI Safety Engineering, LLM Red Teaming, Defensive AI Infrastructure</span>
+  - <span class="content-header">GitHub:</span> <span class="content-tech">https://github.com/Say-Ee/guardrailx</span>
+`
+                        },
+
+                        'ai-awarex.txt': {
+                            type: 'file',
+                            content: `
+<span class="content-title">AI-AwareX - Explainable & Deterministic Cybersecurity Risk Detection Platform</span>
+  - <span class="content-header">Description:</span> Developed a privacy-first analysis platform that detects PII exposure, AI-generated text patterns, and image/deepfake manipulation using deterministic heuristic-based methods without relying on black-box ML models.
+  - <span class="content-header">Core Features:</span> PII detection (Presidio + spaCy), AI-likelihood scoring (burstiness, repetition ratio, vocabulary richness), image metadata & compression artifact analysis, unified LOW/MEDIUM/HIGH risk scoring.
+  - <span class="content-header">Architecture:</span> Django backend with PostgreSQL, central router invoking stateless detectors, unified JSON risk report, deterministic output (same input = same result).
+  - <span class="content-header">Security Model:</span> No raw PII storage, no text logging, no face recognition, no external API calls, fully reproducible audit trail.
+  - <span class="content-header">GitHub:</span> <span class="content-tech">https://github.com/vaidehipathak/AI-Awareness</span>
 `
                         },
                         'harden-the-grid.txt': {
@@ -258,30 +334,7 @@ I aim to build a career in cyber threat intelligence and offensive security, com
                         }
                     }
                 },
-                'blogs': {
-                    type: 'directory',
-                    contents: {
-                        'project-management.txt': {
-                            type: 'file',
-                            content: `
-<span class="content-title">Project Management in Software Engineering</span>
-  - <span class="content-header">Platform:</span> GitHub
-  - <span class="content-header">Description:</span> Authored an insightful article exploring key principles of Software Engineering and Project Management (SEMP) — covering planning, execution, risk management, and effective collaboration in project lifecycles.
-  - <span class="content-header">Link:</span> https://github.com/Nalawade-Purva/project-management-articles
-`
-                        },
-                        'cyber-forensics.txt': {
-                            type: 'file',
-                            content: `
-<span class="content-title">Cyber Crime Investigation & Digital Forensics</span>
-  - <span class="content-header">Platform:</span> GitHub
-  - <span class="content-header">Description:</span> Authored a detailed article based on the “Cyber Security 101” learning path on TryHackMe — covering core cybersecurity fundamentals including confidentiality, integrity, and availability (CIA triad), threat types, attack vectors, and essential defense mechanisms. The article provides insights into practical concepts like malware analysis, network security basics, social engineering awareness, and security best practices for individuals and organizations.
-  - <span class="content-header">Link:</span> https://github.com/Nalawade-Purva/cybersecurity-101-article
-`
-                        }
-                    }
-                },
-                'resume.pdf': {
+                'resume.txt': {
                     type: 'file',
                     content: `
 Resume:
@@ -292,9 +345,8 @@ Download from: https://sites.google.com/sakec.ac.in/purva-nalawade/resume
         }
     };
 
-
-    // --- Persistent Terminal Content on Clear/Load ---
-    const TERMINAL_PERSISTENT_CONTENT = `
+// --- Persistent Terminal Content on Clear/Load ---
+const TERMINAL_PERSISTENT_CONTENT = `
 ██████  ██    ██ ██████  ██    ██  █████  
 ██   ██ ██    ██ ██   ██ ██    ██ ██   ██ 
 ██████  ██    ██ ██████  ██    ██ ███████ 
