@@ -363,7 +363,7 @@ Type 'help' for a list of commands, or 'ls' to explore the file system.
 
     // --- Get Current Prompt Text (now with distinct spans for styling) ---
     function getPrompt() {
-        return `<span class="prompt-user">guest</span><span class="prompt-at">@</span><span class="prompt-host">myportfolio.xyz</span>:<span class="prompt-dir">${currentDirectory}</span><span class="prompt-dollar">$</span>`;
+        return `<span class="prompt-user">guest</span><span class="prompt-at">@</span><span class="prompt-host">purva@nalawade-purva.github.io</span>:<span class="prompt-dir">${currentDirectory}</span><span class="prompt-dollar">$</span>`;
     }
 
     // --- Get Content from Simulated File System ---
@@ -395,7 +395,7 @@ Type 'help' for a list of commands, or 'ls' to explore the file system.
         const timeStr = now.toLocaleTimeString('en-US', timeOptions);
 
         terminalBanner.innerHTML = `
-            <span class="banner-left">guest@myportfolio.xyz</span>
+            <span class="banner-left">purva@cyberlab</span>
             <span class="banner-right">${dateStr} ${timeStr}</span>
         `;
     }
