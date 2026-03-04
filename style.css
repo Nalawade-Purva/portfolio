@@ -226,7 +226,8 @@ body::after { /* Vignette effect (darker edges) */
 /* --- Output Area Styling --- */
 #output {
     white-space: pre-wrap; /* Preserve whitespace and wrap text */
-    word-break: break-all; /* Break long words */
+    word-break: normal;
+    overflow-wrap: break-word;
     margin: 0;
     padding-bottom: 0;
     flex-grow: 1;
