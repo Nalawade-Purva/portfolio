@@ -78,7 +78,8 @@ My experience includes web application VAPT aligned with OWASP standards, vulner
 Previously, I worked as a <span class="content-header">Full Stack Development Intern</span> at Millennium Enterprise, where I built secure end-to-end web applications and implemented authentication, input validation, and backend logic with security-first practices.
 
 <span class="content-header">Achievements:</span>  
-<span class="content-bullet">*</span> Hackathon Finalist & National-Level Security Challenge Winner  
+<span class="content-bullet">*</span> Hackathon Finalist (Top 10) — Idea Hackathon  
+<span class="content-bullet">*</span> Consolation Prize Winner (Top 10) — CCTV Surveillance Security & Forensics Hackathon 2.0 
 <span class="content-bullet">*</span> Contributor to the book <span class="content-tech">Intelligent Forensic</span>
 
 <span class="content-header">Currently Focused On:</span>  
