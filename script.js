@@ -181,31 +181,39 @@ Previously, I worked as a <span class="content-header">Full Stack Development In
                     content: `
 <span class="content-title">EXTRACURRICULAR ACTIVITIES</span>
 --------------------------------------------------------------------------------
-<span class="command-highlight">Events Head - Ek Bharat Shreshtha Bharat (EBSB) Club SAKEC</span>
-  <span class="content-bullet">*</span> Headed the Events Team for cultural and technical exchange programs.
-  <span class="content-bullet">*</span> Organized inter-college competitions promoting national integration and collaboration.
+<span class="command-highlight">Leadership & Club Involvement</span>
 
 <span class="command-highlight">Events Lead - Cyber Council, University</span>
-  <span class="content-bullet">*</span> Led and organized multiple cybersecurity awareness sessions, competitions.
-  <span class="content-bullet">*</span> Coordinated with industry experts to host guest lectures and student workshops.
-  <span class="content-bullet">*</span> Managed event logistics, marketing, and student engagement activities.
+  <span class="content-bullet">*</span> Led and organized multiple cybersecurity awareness sessions and competitions.
+  <span class="content-bullet">*</span> Coordinated with industry experts to host guest lectures and technical workshops.
+  <span class="content-bullet">*</span> Managed event logistics, marketing, and student engagement initiatives.
+
+<span class="command-highlight">Events Head - Ek Bharat Shreshtha Bharat (EBSB) Club SAKEC</span>
+  <span class="content-bullet">*</span> Headed the Events Team for cultural and technical exchange programs.
+  <span class="content-bullet">*</span> Organized inter-college competitions promoting collaboration and national integration.
+
+<span class="command-highlight">Operational Team Member - Google Developer Student Clubs (GDSC)</span>
+  <span class="content-bullet">*</span> Contributed to planning and execution of technical workshops and community initiatives.
+  <span class="content-bullet">*</span> Assisted in speaker coordination, event logistics, and student engagement.
+
+<span class="command-highlight">Technical Team Member - Cyber Council</span>
+  <span class="content-bullet">*</span> Supported cybersecurity workshops, awareness sessions, and technical competitions.
+  <span class="content-bullet">*</span> Assisted in preparing technical content and coordinating event execution.
+
 
 <span class="command-highlight">Editorial Team - Intelligent Forensic (Published Book)</span>
-  <span class="content-bullet">*</span> Contributed to the editorial and review process of a published book on digital forensics.
-  <span class="content-bullet">*</span> Gained experience in technical writing, proofreading, and content structuring for research publication.
+  <span class="content-bullet">*</span> Contributed to research, content development, and technical writing for a published book on digital forensics.
+  <span class="content-bullet">*</span> Participated in the editorial and review process, including proofreading, fact-checking, and content structuring.
 
 <span class="command-highlight">Hackathon Participation</span>
   <span class="content-bullet">*</span> Idea Hackathon (Top 10 Finalist) - Phishers Project
-  <span class="content-bullet">*</span> CCTV Surveillance Security & Forensics Hackathon 2.0 (Consolation Winner) - Harden the Grid Project
+  <span class="content-bullet">*</span> CCTV Surveillance Security & Forensics Hackathon 2.0 (Consolation Prize Winner) - Harden the Grid Project
+
 
 <span class="command-highlight">CTF Participation</span>
-  <span class="content-bullet">*</span> Participated in multiple cybersecurity CTF challenges.
-  <span class="content-bullet">*</span> Specialized in web exploitation, network forensics, and OSINT-based challenges.
-  <span class="content-bullet">*</span> Solved challenges involving Nmap scans, brute-force, sniffing, replay attacks, and privilege escalation.
-
-<span class="command-highlight">Tech Communities & Clubs</span>
-  <span class="content-bullet">*</span> Operational Team Member, Google Developer Student Clubs (GDSC) - Contributed to the planning and execution of technical events and community initiatives.
-  <span class="content-bullet">*</span> Technical Team Member, Cyber Council - Supported cybersecurity workshops, awareness sessions, and technical competitions.
+  <span class="content-bullet">*</span> Participated in multiple cybersecurity Capture The Flag competitions.
+  <span class="content-bullet">*</span> Specialized in Web Exploitation, OSINT, and Digital Forensics challenges.
+  <span class="content-bullet">*</span> Solved challenges across Web Exploitation, OSINT, Digital Forensics, Steganography, Reverse Engineering, and Misc categories involving vulnerability analysis, traffic inspection, and logic-based exploitation.
 `
                 },
                 'internships': {
