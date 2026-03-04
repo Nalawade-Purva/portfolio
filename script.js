@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     type: 'file',
                     content: `
 <span class="content-title">Purva Nalawade</span>
-<span class="content-tech">B.Tech Cybersecurity | CEH v13 | ISC2 CC</span>
+<span class="content-tech">B.Tech Cybersecurity with Honours in AI/ML | CEH v13 | ISC2 CC</span>
 
 <span class="content-header">Cyber Security Intern:</span> Maharashtra Cyber  
 <span class="content-header">Project Intern:</span> CyberPeace Foundation (Centre of Excellence)  
