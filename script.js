@@ -578,7 +578,6 @@ Available commands:
   <span class="command-highlight">skills</span>          - View my technical skills (equivalent to 'cat /skills.txt')
   <span class="command-highlight">projects</span>        - See my work (equivalent to 'ls /projects')
   <span class="command-highlight">internships</span>     - View my internship experiences (equivalent to 'ls /internships')
-  <span class="command-highlight">blogs</span>           - Read my articles (equivalent to 'ls /blogs')
   <span class="command-highlight">certifications</span>  - See my earned certifications (equivalent to 'cat /certifications.txt')
   <span class="command-highlight">education</span>       - View my academic background (equivalent to 'cat /education.txt')
   <span class="command-highlight">extracurricular</span> - Explore my activities outside academics (equivalent to 'cat /extracurricular.txt')
