@@ -590,7 +590,7 @@ Available commands:
   <span class="command-highlight">education</span>       - View my academic background (equivalent to 'cat /education.txt')
   <span class="command-highlight">extracurricular</span> - Explore my activities outside academics (equivalent to 'cat /extracurricular.txt')
   <span class="command-highlight">contact</span>         - Get in touch (equivalent to 'cat /contact.txt')
-  <span class="command-highlight">resume</span>          - Get my resume (equivalent to 'cat /resume.pdf')
+  <span class="command-highlight">resume</span>          - Get my resume (equivalent to 'resume')
 
   <span class="command-highlight">ls</span>              - List directory contents (e.g., ls, ls /projects)
   <span class="command-highlight">dir</span>             - List directory contents (alias for 'ls')
@@ -633,7 +633,7 @@ You're one step closer to hiring your next cybersecurity star! The download will
                     setTimeout(() => {
                         // This line has been changed to directly reference the PDF file
                         // from the root of your GitHub Pages deployment.
-                        downloadFile('Purva_Nalawade_Resume.pdf', 'Purva_Nalawade_Resume.pdf');
+                        downloadFile('PurvaNalawade_Resume.pdf', 'PurvaNalawade_Resume.pdf');
                     }, 1000); // 1-second delay
                     return; // Exit here since we don't want to call typeOutput again
 
