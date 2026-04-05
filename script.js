@@ -304,7 +304,6 @@ Previously, I worked as a <span class="content-header">Full Stack Development In
   - <span class="content-header">GitHub:</span> <span class="content-tech">https://github.com/Say-Ee/guardrailx</span>
 `
                         },
-
                         'ai-awarex.txt': {
                             type: 'file',
                             content: `
@@ -314,6 +313,18 @@ Previously, I worked as a <span class="content-header">Full Stack Development In
   - <span class="content-header">Architecture:</span> Django backend with PostgreSQL, central router invoking stateless detectors, unified JSON risk report, deterministic output (same input = same result).
   - <span class="content-header">Security Model:</span> No raw PII storage, no text logging, no face recognition, no external API calls, fully reproducible audit trail.
   - <span class="content-header">GitHub:</span> <span class="content-tech">https://github.com/vaidehipathak/AI-Awareness</span>
+`
+                        },
+                        'revenant.txt': {
+                            type: 'file',
+                            content: `
+<span class="content-title">Revenant - Automated Zombie API Discovery & Defence Platform</span>
+  - <span class="content-header">Date:</span> Mar 2026 – Present
+  - <span class="content-header">Description:</span> Banks accumulate thousands of forgotten API endpoints over years of digital transformation. Revenant scans across 6 discovery vectors — network, API gateways, code repositories, CI/CD pipelines, and traffic logs — to build a complete API inventory, classifying every endpoint as Active, Deprecated, Orphaned, or Zombie.
+  - <span class="content-header">Core Features:</span> Automated decommissioning workflow with owner identification, gateway blocking, and repository cleanup. Built-in Risk Correlator maps APIs against the OWASP API Top 10, runs CVE lookups, detects PII exposure, and assesses regulatory impact against RBI, PCI-DSS, and DPDP Act 2023.
+  - <span class="content-header">Impact:</span> Reduces mean time to decommission from months to under 14 days. Eliminates blind spots in the API estate and prevents zombie API proliferation from becoming a breach.
+  - <span class="content-header">Focus:</span> <span class="content-tech">API Security, OWASP API Top 10, CVE Detection, PII Exposure Analysis, CI/CD Integration, RBI / PCI-DSS / DPDP Act 2023</span>
+  - <span class="content-header">GitHub:</span> <span class="content-tech">https://github.com/Say-Ee/revenant</span>
 `
                         },
                         'harden-the-grid.txt': {
@@ -337,7 +348,7 @@ Previously, I worked as a <span class="content-header">Full Stack Development In
                             type: 'file',
                             content: `
 <span class="content-title">Swiss Army Knife - Multi-Purpose Cybersecurity Utility Tool</span>
-  - <span class="content-header">Description:</span> Developed a multi-utility cybersecurity toolkit that integrates several common offensive and defensive features into a single interface — functioning as a “Swiss Army Knife” for security testing, reconnaissance, and quick incident response.
+  - <span class="content-header">Description:</span> Developed a multi-utility cybersecurity toolkit that integrates several common offensive and defensive features into a single interface — functioning as a "Swiss Army Knife" for security testing, reconnaissance, and quick incident response.
   - <span class="content-header">Tools & Technologies:</span> <span class="content-tech">Python, Flask/Tkinter, Requests, Socket, OSINT APIs, Nmap, Hashlib, Cryptography Libraries</span>
 `
                         }
