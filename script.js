@@ -66,31 +66,39 @@ document.addEventListener('DOMContentLoaded', () => {
                     type: 'file',
                     content: `
 <span class="content-title">Purva Nalawade</span>
-<span class="content-tech">B.Tech Cybersecurity with Honours in AI/ML | CEH v13 | ISC2 CC</span>
+<span class="content-tech">B.Tech Cybersecurity with Honours in AI/ML | CEH v13 | Security+ | ISC2 CC</span>
 
-<span class="content-header">Cyber Security Intern:</span> Maharashtra Cyber  
-<span class="content-header">Project Intern:</span> CyberPeace Foundation (Centre of Excellence)  
-<span class="content-header">Former Red Team Intern:</span> DeepCytes (UK)
+<span class="content-header">Cybersecurity Intern:</span> Maharashtra Cyber (Jan 2026 – Aug 2026)  
+<span class="content-header">Research Intern:</span> CyberPeace Foundation, Centre of Excellence (Jan 2026 – May 2026)  
+<span class="content-header">Former Red Team Analyst – Intern:</span> DeepCytes (UK)
 
-I work at the intersection of offensive security and secure system design.  
-My experience includes web application VAPT aligned with OWASP standards, vulnerability validation, structured security reporting, and exposure to real-world cyber defense workflows.
+I work at the intersection of offensive security and AI security research.  
+My experience includes web application VAPT aligned with OWASP standards, OSINT-driven investigation and SIEM triage at Maharashtra Cyber, and building adversarial-ML pipelines at CyberPeace Foundation.
 
-Previously, I worked as a <span class="content-header">Full Stack Development Intern</span> at Millennium Enterprise, where I built secure end-to-end web applications and implemented authentication, input validation, and backend logic with security-first practices.
+My research on adversarial transferability, LLM inference-time forgetting, and facial identity protection has been accepted at Springer venues, and I have an Indian patent application filed on zero-knowledge adversarial forensic simulation. Type <span class="command-highlight">research</span> to read more.
+
+Previously, I worked as a <span class="content-header">Full Stack Development Intern</span> at Millennium Enterprise, where I built a secure web application with JWT/OAuth authentication and strict input validation.
 
 <span class="content-header">Achievements:</span>  
-<span class="content-bullet">*</span> Hackathon Finalist (Top 10) — Idea Hackathon  
-<span class="content-bullet">*</span> Consolation Prize Winner (Top 10) — CCTV Surveillance Security & Forensics Hackathon 2.0 
+<span class="content-bullet">*</span> Top 10 Finalist — National iDEA Hackathon 2025  
+<span class="content-bullet">*</span> Consolation Prize Winner (Top 12 / 750+ teams) — MHA, BPR&D & NCRB Hackathon 2.0, New Delhi  
+<span class="content-bullet">*</span> TryHackMe Top 2% Globally  
+<span class="content-bullet">*</span> Accepted at WorldS4 2026 and ICTCS 2026 (Springer LNNS)  
+<span class="content-bullet">*</span> Indian Patent Application No. 202621074738  
 <span class="content-bullet">*</span> Contributor to the book <span class="content-tech">Intelligent Forensic</span>
 
 <span class="content-header">Currently Focused On:</span>  
-<span class="content-tech">Red Teaming • Web Application Security • Threat Analysis • Secure Architecture</span>
+<span class="content-tech">Red Teaming • Adversarial ML • AI Security • Threat Analysis</span>
 `
                 },
                 'education.txt': {
                     type: 'file',
                     content: `
 <span class="content-title">EDUCATION</span>
-  - Shah and Anchor Kutchhi Engineering College (2023 - Present)
+  - Shah and Anchor Kutchhi Engineering College, University of Mumbai (2023 - Expected May 2027)
+      B.Tech in Cyber Security (CGPA: 8.83/10)
+      Honors in AI/ML (CGPA: 9.5/10)
+      <span class="content-header">Coursework:</span> <span class="content-tech">AI/ML with Cyber Security • Cryptography & Network Security • Cyber Crime Investigation & Digital Forensics • Security Operations Center • Penetration Testing • Cloud & Multi-Cloud Security</span>
   - Peoples Education Society (2021 - 2023)
   - Holy Cross Convent High School (2015 - 2021)
 `
@@ -101,22 +109,25 @@ Previously, I worked as a <span class="content-header">Full Stack Development In
 <span class="content-title">SKILLS</span>
 
 <span class="content-header">Programming:</span> 
-<span class="content-tech">C • Python • Bash • SQL</span>
+<span class="content-tech">Python • C • Bash • SQL • JavaScript • TypeScript</span>
 
-<span class="content-header">Platforms & OS:</span> 
-<span class="content-tech">Linux (Kali/Ubuntu) • Windows</span>
+<span class="content-header">Security & Systems:</span> 
+<span class="content-tech">Burp Suite • Nmap • Wireshark • Metasploit • Suricata • QRadar (SIEM) • Autopsy • FlareVM</span>
 
-<span class="content-header">Security Tools:</span> 
-<span class="content-tech">Nmap • Wireshark • Metasploit • Burp Suite • Autopsy • Git & GitHub</span>
+<span class="content-header">AI / ML Security:</span> 
+<span class="content-tech">PyTorch • HuggingFace Transformers • ART (Adversarial Robustness Toolbox) • scikit-learn • Presidio • spaCy</span>
 
 <span class="content-header">Web Security & Red Team:</span> 
-<span class="content-tech">Web Application VAPT (OWASP-based) • Vulnerability Validation • Basic Exploitation & Enumeration • Structured Security Reporting</span>
+<span class="content-tech">Web Application VAPT (OWASP Top 10) • Vulnerability Validation • Basic Exploitation & Enumeration • Structured Security Reporting</span>
 
-<span class="content-header">Cybersecurity Domains:</span> 
-<span class="content-tech">Network Security Fundamentals • IDS/IPS Concepts • Threat Intelligence • OSINT • Digital Forensics • AI Applications in Cybersecurity</span>
+<span class="content-header">OSINT & Investigation:</span> 
+<span class="content-tech">Maltego • ExifTool • DarkOwl • WHOIS • theHarvester • Digital Forensics • Threat Intelligence</span>
+
+<span class="content-header">Cloud & Infrastructure:</span> 
+<span class="content-tech">AWS (Cloud Architecture, Security & Operations) • Linux (Kali/Ubuntu) • Docker • VirtualBox/VMware • Git & GitHub • GitHub Actions (CI/CD)</span>
 
 <span class="content-header">Web Development:</span> 
-<span class="content-tech">HTML • CSS • JavaScript • React • Next.js • Secure Authentication & Input Validation</span>
+<span class="content-tech">Node.js • Express • MongoDB • React • Next.js • Secure Authentication & Input Validation</span>
 
 <span class="content-header">Soft Skills:</span> 
 <span class="content-tech">Leadership • Communication • Analytical Thinking • Adaptability • Team Collaboration • Time Management</span>
@@ -126,16 +137,64 @@ Previously, I worked as a <span class="content-header">Full Stack Development In
                     type: 'file',
                     content: `
 <span class="content-title">CONTACT</span>
-  <span class="content-header">Location:</span> Mumbai, India
-  <span class="content-header">Email:</span> purva.17737@sakec.ac.in
+  <span class="content-header">Location:</span> Thane, Maharashtra, India
+  <span class="content-header">Email:</span> purvanalawade09@gmail.com
   <span class="content-header">GitHub:</span> https://github.com/Nalawade-Purva
   <span class="content-header">LinkedIn:</span> https://www.linkedin.com/in/purva-nalawade-532921315/
+`
+                },
+                'research.txt': {
+                    type: 'file',
+                    content: `
+<span class="content-title">RESEARCH & PUBLICATIONS</span>
+--------------------------------------------------------------------------------
+<span class="command-highlight">Beyond Single-Dataset Evaluation: Cross-Dataset Adversarial Transferability in NIDS</span>
+  - <span class="content-header">Venue:</span> WorldS4 2026 (Springer LNNS, Scopus-indexed)
+  - <span class="content-header">Status:</span> Accepted, oral presentation on Jul 28, 2026
+  - <span class="content-header">Summary:</span> Cross-dataset transferability of adversarial attacks (BoundaryAttack via ART) against Random Forest and XGBoost on CICIDS2017 and UNSW-NB15.
+
+--------------------------------------------------------------------------------
+<span class="command-highlight">TrustFade: LLM Inference-Time Forgetting</span>
+  - <span class="content-header">Venue:</span> ICTCS 2026 (Springer LNNS)
+  - <span class="content-header">Status:</span> Accepted, oral presentation on Dec 17, 2026
+  - <span class="content-header">Summary:</span> A 648-trial study of behavioral suppression across Llama model scales and probe types.
+
+--------------------------------------------------------------------------------
+<span class="command-highlight">Deceiving AI While Preserving Human Perception: A Generative Adversarial Approach to Facial Identity Protection</span>
+  - <span class="content-header">Status:</span> Accepted at AIS 2026 (Springer LNCS) but withdrawn prior to publication; currently under review at ICISS 2026.
+
+--------------------------------------------------------------------------------
+<span class="command-highlight">Indian Patent Application No. 202621074738</span>
+  - <span class="content-header">Title:</span> Cybersecurity Defense System and Method for Zero-Knowledge Adversarial Forensic Simulation and Vulnerability Assessment
+  - <span class="content-header">Status:</span> Filed Jun 16, 2026. Published, under examination.
+
+--------------------------------------------------------------------------------
+<span class="command-highlight">Intelligent Forensic (Published Book)</span>
+  - <span class="content-header">Role:</span> Editorial team member & contributor (Millennium Enterprises)
 `
                 },
                 'certifications.txt': {
                     type: 'file',
                     content: `
 <span class="content-title">CERTIFICATIONS</span>
+--------------------------------------------------------------------------------
+<span class="command-highlight">AWS Academy Graduate</span>
+  - <span class="content-header">Issued by:</span> AWS Academy (Amazon Web Services Training and Certification)
+  - <span class="content-header">Date:</span> June 2026
+  - <span class="content-header">Badges:</span>
+    <span class="content-bullet">*</span> Cloud Architecting (Jun 21, 2026)
+    <span class="content-bullet">*</span> Cloud Developing (Jun 21, 2026)
+    <span class="content-bullet">*</span> Cloud Operations (Jun 22, 2026)
+    <span class="content-bullet">*</span> Cloud Security Foundations (Jun 22, 2026)
+    <span class="content-bullet">*</span> Engineering Operations Technicians (Jun 23, 2026)
+  - <span class="content-header">Skills Covered:</span> <span class="content-tech">AWS Architecture, Cloud Security, Cloud Operations, Cloud Development</span>
+
+--------------------------------------------------------------------------------
+<span class="command-highlight">CompTIA Security+ (SY0-701)</span>
+  - <span class="content-header">Issued by:</span> CompTIA
+  - <span class="content-header">Description:</span> Validated baseline skills in threat analysis, security architecture, incident response, and risk management.
+  - <span class="content-header">Skills Covered:</span> <span class="content-tech">Threat Management, Security Operations, Network Security, Governance & Risk</span>
+
 --------------------------------------------------------------------------------
 <span class="command-highlight">Certified in Cybersecurity (CC) — ISC²</span>
   - <span class="content-header">Issued by:</span> ISC²
@@ -144,17 +203,17 @@ Previously, I worked as a <span class="content-header">Full Stack Development In
   - <span class="content-header">Skills Covered:</span> <span class="content-tech">Cybersecurity Concepts, Access Control, Network Security, Security Operations, Risk Management</span>
 
 --------------------------------------------------------------------------------
-<span class="command-highlight">Certified Ethical Hacker (CEH) — EC-Council</span>
+<span class="command-highlight">Certified Ethical Hacker (CEH v13) — EC-Council</span>
   - <span class="content-header">Issued by:</span> EC-Council
   - <span class="content-header">Date:</span> July 2025
   - <span class="content-header">Description:</span> Demonstrated advanced understanding of ethical hacking methodologies, penetration testing, and exploit analysis. Achieved a score of 118 in the CEH examination.
   - <span class="content-header">Skills Covered:</span> <span class="content-tech">Penetration Testing, Vulnerability Assessment, Exploit Development, Malware Analysis, Network Defense</span>
 
 --------------------------------------------------------------------------------
-<span class="command-highlight">TryHackMe Certifications</span>
-  - <span class="content-header">Issued by:</span> TryHackMe
+<span class="command-highlight">TryHackMe Certifications — Top 2% Globally</span>
+  - <span class="content-header">Issued by:</span> TryHackMe (handle: 404xShadow)
   - <span class="content-header">Certificates:</span> Web Fundamentals & Junior Penetration Tester
-  - <span class="content-header">Description:</span> Hands-on training in ethical hacking, web exploitation, and security assessment through interactive labs and real-world attack simulations.
+  - <span class="content-header">Description:</span> Hands-on training in ethical hacking, web exploitation, and security assessment through interactive labs and real-world attack simulations. Ranked in the top 2% globally.
   - <span class="content-header">Skills Covered:</span> <span class="content-tech">Web Security, Penetration Testing, Reconnaissance, Vulnerability Exploitation</span>
 
 --------------------------------------------------------------------------------
@@ -183,7 +242,7 @@ Previously, I worked as a <span class="content-header">Full Stack Development In
 --------------------------------------------------------------------------------
 <span class="command-highlight">Leadership & Club Involvement</span>
 
-<span class="command-highlight">Events Lead - Cyber Council, University</span>
+<span class="command-highlight">Events Lead - Cyber Council, SAKEC</span>
   <span class="content-bullet">*</span> Led and organized multiple cybersecurity awareness sessions and competitions.
   <span class="content-bullet">*</span> Coordinated with industry experts to host guest lectures and technical workshops.
   <span class="content-bullet">*</span> Managed event logistics, marketing, and student engagement initiatives.
@@ -192,7 +251,7 @@ Previously, I worked as a <span class="content-header">Full Stack Development In
   <span class="content-bullet">*</span> Headed the Events Team for cultural and technical exchange programs.
   <span class="content-bullet">*</span> Organized inter-college competitions promoting collaboration and national integration.
 
-<span class="command-highlight">Operational Team Member - Google Developer Student Clubs (GDSC)</span>
+<span class="command-highlight">Operations Team Member - GDG on Campus</span>
   <span class="content-bullet">*</span> Contributed to planning and execution of technical workshops and community initiatives.
   <span class="content-bullet">*</span> Assisted in speaker coordination, event logistics, and student engagement.
 
@@ -206,13 +265,12 @@ Previously, I worked as a <span class="content-header">Full Stack Development In
   <span class="content-bullet">*</span> Participated in the editorial and review process, including proofreading, fact-checking, and content structuring.
 
 <span class="command-highlight">Hackathon Participation</span>
-  <span class="content-bullet">*</span> Idea Hackathon (Top 10 Finalist) - Phishers Project
-  <span class="content-bullet">*</span> CCTV Surveillance Security & Forensics Hackathon 2.0 (Consolation Prize Winner) - Harden the Grid Project
+  <span class="content-bullet">*</span> National iDEA Hackathon 2025 (Top 10 Finalist) - Phishing Link Detection & Takedown Platform
+  <span class="content-bullet">*</span> MHA, BPR&D & NCRB Hackathon 2.0, New Delhi (Consolation Prize Winner, Top 12 / 750+ Teams) - CCTV Cyber Defense Project
 
 
 <span class="command-highlight">CTF Participation</span>
-  <span class="content-bullet">*</span> Participated in multiple cybersecurity Capture The Flag competitions.
-  <span class="content-bullet">*</span> Specialized in Web Exploitation, OSINT, and Digital Forensics challenges.
+  <span class="content-bullet">*</span> Competed in DawgCTF 2025 (UMBC, USA - 64th), KJSSE CTF 3.0, Bypass CTF 2025 (AIT Pune), CREST CTF 2026, and Hacker's Gambit (OWASP).
   <span class="content-bullet">*</span> Solved challenges across Web Exploitation, OSINT, Digital Forensics, Steganography, Reverse Engineering, and Misc categories involving vulnerability analysis, traffic inspection, and logic-based exploitation.
 `
                 },
@@ -222,43 +280,39 @@ Previously, I worked as a <span class="content-header">Full Stack Development In
                         'maharashtra_cyber.txt': {
                             type: 'file',
                             content: `
-<span class="content-title">Cyber Security Intern — Maharashtra Cyber (January 2026 – Present)</span>
-  - <span class="content-header">Description:</span> Gaining hands-on exposure to state-level cyber defense operations, SOC architecture, and enterprise threat monitoring workflows.
+<span class="content-title">Cybersecurity Intern — Maharashtra Cyber (January 2026 – August 2026)</span>
+  - <span class="content-header">Description:</span> Hands-on work in state-level cyber operations: IP tracing and OSINT investigation for child-safety referrals, extortion and deepfake cases, plus SIEM alert triage.
   - <span class="content-header">Key Highlights:</span>
-    <span class="content-bullet">*</span> Studying Security Operations Center (SOC) architecture and incident response lifecycle processes.
-    <span class="content-bullet">*</span> Gaining exposure to enterprise SIEM monitoring using IBM QRadar for real-time threat detection.
-    <span class="content-bullet">*</span> Exploring Attack Surface Management (ASM) methodologies to understand digital footprint mapping and external risk visibility.
-    <span class="content-bullet">*</span> Analyzing security telemetry and log patterns for threat identification and escalation workflows.
-  - <span class="content-header">Skills Gained:</span> <span class="content-tech">SOC Architecture, SIEM Fundamentals (QRadar), Attack Surface Management, Security Telemetry Analysis</span>
+    <span class="content-bullet">*</span> Traced IP origins and mapped digital footprints for 50 NCMEC-referred cases daily over 4 months, identifying the originating district/city and forwarding findings to the relevant local law enforcement unit.
+    <span class="content-bullet">*</span> Tracked extortion and deepfake dissemination across Instagram, WhatsApp, and Snapchat using Maltego, ExifTool, DarkOwl, WHOIS, and theHarvester, supporting takedown requests on 15 cases.
+    <span class="content-bullet">*</span> Triaged 20-30 IBM QRadar (SIEM) alerts daily, escalating suspicious activity to senior analysts for investigation.
+  - <span class="content-header">Skills Gained:</span> <span class="content-tech">OSINT Investigation, IP Tracing, SIEM Triage (QRadar), Takedown Support</span>
   - <span class="content-header">Location:</span> Mumbai
-  - <span class="content-header">Status:</span> Ongoing
+  - <span class="content-header">Status:</span> Completed
 `
                         },
                         'coe_project_intern.txt': {
                             type: 'file',
                             content: `
-<span class="content-title">Project Intern — CyberPeace Foundation (Centre of Excellence) (January 2026 – Present)</span>
-  - <span class="content-header">Description:</span> Contributing to cybersecurity and AI-safety research initiatives, including development of AI-AwareX — an explainable, deterministic cybersecurity risk detection platform.
+<span class="content-title">Research Intern — CyberPeace Foundation (Centre of Excellence) (January 2026 – May 2026)</span>
+  - <span class="content-header">Description:</span> Contributed to cybersecurity and AI-safety research, building core pipelines for AI-AwareX — an explainable, deterministic cybersecurity risk detection platform.
   - <span class="content-header">Key Highlights:</span>
-    <span class="content-bullet">*</span> Designed modular system architecture with a central routing layer and stateless detection modules.
-    <span class="content-bullet">*</span> Implemented heuristic-based PII, AI-text likelihood, and image manipulation detection workflows.
-    <span class="content-bullet">*</span> Built deterministic risk scoring logic with unified reporting and database-backed audit persistence.
-    <span class="content-bullet">*</span> Contributed to structured documentation and AI governance design discussions.
-  - <span class="content-header">Skills Gained:</span> <span class="content-tech">Secure Architecture Design, Deterministic Detection Systems, AI Safety Engineering, Risk Modeling</span>
+    <span class="content-bullet">*</span> Conceived and built modular pipelines for AI-AwareX, integrating a Differentiable JPEG Simulator via Projected Gradient Descent (PGD) so adversarial cloaking survives platform re-encoding.
+    <span class="content-bullet">*</span> Implemented deterministic heuristic and regex pipelines for PII redaction (Aadhaar, PAN, financial identifiers) and AI-generated text classification.
+  - <span class="content-header">Skills Gained:</span> <span class="content-tech">Adversarial ML, PGD, PII Redaction, Deterministic Detection Systems</span>
   - <span class="content-header">Location:</span> Remote
-  - <span class="content-header">Status:</span> Ongoing
+  - <span class="content-header">Status:</span> Completed
 `
                         },
                         'deepcytes_redteam.txt': {
                             type: 'file',
                             content: `
-<span class="content-title">Red Team Intern — DeepCytes Cyber Labs (July 2025 – December 2025)</span>
-  - <span class="content-header">Description:</span> Worked as a Red Team Intern focusing on web application security testing, vulnerability validation, and structured security reporting aligned with OWASP standards.
+<span class="content-title">Red Team Analyst – Intern — DeepCytes Cyber Labs (July 2025 – December 2025)</span>
+  - <span class="content-header">Description:</span> Web application security testing, vulnerability validation, and structured security reporting aligned with OWASP standards.
   - <span class="content-header">Key Highlights:</span>
-    <span class="content-bullet">*</span> Performed web application VAPT including authentication testing, input validation flaws, and business logic analysis.
-    <span class="content-bullet">*</span> Used Burp Suite, Nmap, Metasploit, and Wireshark for reconnaissance and controlled exploitation.
-    <span class="content-bullet">*</span> Documented findings with risk ratings, proof-of-concept steps, and remediation guidance.
-    <span class="content-bullet">*</span> Participated in controlled attack simulation exercises within lab environments.
+    <span class="content-bullet">*</span> Executed web application penetration testing (VAPT) across live target environments using Burp Suite, Nmap, and custom automation scripts.
+    <span class="content-bullet">*</span> Identified and exploited critical vulnerabilities aligned with OWASP Top 10 (including SQL Injection, IDOR, and broken authentication).
+    <span class="content-bullet">*</span> Delivered remediation PoCs and executive risk ratings.
   - <span class="content-header">Skills Gained:</span> <span class="content-tech">Web Application VAPT, Vulnerability Assessment, Exploitation Basics, Security Reporting, Reconnaissance</span>
   - <span class="content-header">Location:</span> Remote / Hybrid
   - <span class="content-header">Status:</span> Completed
@@ -267,13 +321,11 @@ Previously, I worked as a <span class="content-header">Full Stack Development In
                         'millennium_fullstack.txt': {
                             type: 'file',
                             content: `
-<span class="content-title">Full Stack Development Intern — Millennium Enterprise (March 2025 – June 2025)</span>
-  - <span class="content-header">Description:</span> Completed a 3-month internship building secure end-to-end web applications with a security-first development approach.
+<span class="content-title">Full Stack Development Intern — Millennium Enterprise (March 2025 – May 2025)</span>
+  - <span class="content-header">Description:</span> Built a secure end-to-end web application with a security-first development approach.
   - <span class="content-header">Key Highlights:</span>
-    <span class="content-bullet">*</span> Built responsive web interfaces using HTML, CSS, JavaScript, and React.
-    <span class="content-bullet">*</span> Developed REST APIs and backend logic using Node.js and MongoDB.
-    <span class="content-bullet">*</span> Implemented authentication flows, input validation, and secure session handling.
-    <span class="content-bullet">*</span> Applied secure coding practices to reduce common vulnerabilities (XSS, injection, improper validation).
+    <span class="content-bullet">*</span> Co-developed the Millennium Enterprises book publishing website using Node.js, Express, and MongoDB.
+    <span class="content-bullet">*</span> Implemented JWT/OAuth authentication schemes and strict input validation layers to mitigate XSS and injection risks.
   - <span class="content-header">Skills Gained:</span> <span class="content-tech">Full Stack Development, Secure Coding Practices, REST APIs, Authentication Design, Git & GitHub</span>
   - <span class="content-header">Location:</span> Remote / Hybrid
   - <span class="content-header">Status:</span> Completed
@@ -287,20 +339,21 @@ Previously, I worked as a <span class="content-header">Full Stack Development In
                         'phishers.txt': {
                             type: 'file',
                             content: `
-<span class="content-title">Phishers - Phishing URL Detection & Automated Takedown Coordination</span>
-  - <span class="content-header">Award:</span> Hackathon Finalist (Top 10) - Idea Hackathon
-  - <span class="content-header">Description:</span> Developed a centralized platform to detect and coordinate the takedown of phishing domains targeting public sector banks. The solution integrates AI-based phishing detection, real-time reporting, and global registrar coordination to streamline cross-jurisdictional takedown efforts and reduce response time.
-  - <span class="content-header">Tools & Technologies:</span> <span class="content-tech">Python, Flask, scikit-learn, WHOIS/DNS lookups, Passive DNS, AbuseIPDB API, OTX Threat Feeds, Celery, Redis, GitHub</span>
+<span class="content-title">Phishing Link Detection & Takedown Platform</span>
+  - <span class="content-header">Award:</span> Top 10 Finalist - National iDEA Hackathon 2025
+  - <span class="content-header">Description:</span> Automated detection and escalation pipeline for phishing domains targeting public sector banks. Validates SSL anomalies and coordinates real-time takedowns with national incident response frameworks, including CERT-In integration, to reduce cross-jurisdictional response time.
+  - <span class="content-header">Tools & Technologies:</span> <span class="content-tech">Next.js, Django, Supabase, CERT-In Integration</span>
 `
                         },
                         'guardrailx.txt': {
                             type: 'file',
                             content: `
-<span class="content-title">GuardrailX - Defense-in-Depth Governance Layer for Generative AI</span>
+<span class="content-title">GuardrailX - LLM Governance & Safety Framework</span>
   - <span class="content-header">Description:</span> Built a programmable safety framework that sits between users and Large Language Models (LLMs) to enforce policy, detect jailbreak attempts, prevent sensitive data leakage, and log auditable safety decisions.
-  - <span class="content-header">Core Features:</span> Prompt/response risk inspection, jailbreak detection, sanitization controls, automated LLM red-team simulator, bypass rate measurement, latency tracking, safety scorecard generation.
+  - <span class="content-header">Core Features:</span> Prompt/response risk inspection, jailbreak detection, sanitization controls, automated adversarial testing suite, refusal-delta scoring, bypass rate measurement, latency tracking, safety scorecard generation.
+  - <span class="content-header">Evaluation:</span> Evaluates structural safety degradation across Llama 3.3 70B, Mistral, and Qwen, with real-time input/output policy enforcement shields.
   - <span class="content-header">Architecture:</span> Modular guardrail engine + adversarial testing layer + audit API. Compares raw vs protected model behavior to generate measurable safety metrics.
-  - <span class="content-header">Focus:</span> <span class="content-tech">AI Safety Engineering, LLM Red Teaming, Defensive AI Infrastructure</span>
+  - <span class="content-header">Tools & Technologies:</span> <span class="content-tech">Python, PyTorch, HuggingFace, LLM Red Teaming</span>
   - <span class="content-header">GitHub:</span> <span class="content-tech">https://github.com/Say-Ee/guardrailx</span>
 `
                         },
@@ -308,10 +361,11 @@ Previously, I worked as a <span class="content-header">Full Stack Development In
                             type: 'file',
                             content: `
 <span class="content-title">AI-AwareX - Explainable & Deterministic Cybersecurity Risk Detection Platform</span>
-  - <span class="content-header">Description:</span> Developed a privacy-first analysis platform that detects PII exposure, AI-generated text patterns, and image/deepfake manipulation using deterministic heuristic-based methods without relying on black-box ML models.
-  - <span class="content-header">Core Features:</span> PII detection (Presidio + spaCy), AI-likelihood scoring (burstiness, repetition ratio, vocabulary richness), image metadata & compression artifact analysis, unified LOW/MEDIUM/HIGH risk scoring.
-  - <span class="content-header">Architecture:</span> Django backend with PostgreSQL, central router invoking stateless detectors, unified JSON risk report, deterministic output (same input = same result).
+  - <span class="content-header">Description:</span> Privacy-preserving platform built to counter AI-driven threats including deepfakes, phishing automation, and data leakage. Combines deterministic detection (PII exposure, AI-generated text patterns, image manipulation) with adversarial defense for biometric identity protection.
+  - <span class="content-header">Core Features:</span> Compression-Resistant Adversarial Cloak (Differentiable JPEG Simulator + Projected Gradient Descent, so perturbations survive social media re-encoding), Zero-Knowledge Adversarial Threat Twin (Z-KATT) simulation on synthetic data, PII detection and redaction (Presidio + spaCy; Aadhaar, PAN, financial identifiers), AI-likelihood scoring, unified LOW/MEDIUM/HIGH risk scoring.
+  - <span class="content-header">Architecture:</span> React frontend, Django backend with PostgreSQL, central router invoking stateless detectors, unified JSON risk report, deterministic output (same input = same result).
   - <span class="content-header">Security Model:</span> No raw PII storage, no text logging, no face recognition, no external API calls, fully reproducible audit trail.
+  - <span class="content-header">Patent:</span> Basis of Indian Patent Application No. 202621074738.
   - <span class="content-header">GitHub:</span> <span class="content-tech">https://github.com/vaidehipathak/AI-Awareness</span>
 `
                         },
@@ -330,10 +384,10 @@ Previously, I worked as a <span class="content-header">Full Stack Development In
                         'harden-the-grid.txt': {
                             type: 'file',
                             content: `
-<span class="content-title">Harden the Grid: Cyber Defence for CCTV Infrastructure</span>
-  - <span class="content-header">Award:</span> Consolation Prize Winner (Top 10) - CCTV Surveillance Security and Forensics Hackathon 2.0
-  - <span class="content-header">Description:</span> Designed a multi-layered cybersecurity architecture to protect CCTV networks against hacking and data breaches. The solution emphasizes encrypted transmission, role-based access, zero-trust security, and real-time threat detection using IDS/IPS and threat intelligence feeds.
-  - <span class="content-header">Tools & Technologies:</span> <span class="content-tech">Flask, nginx (NVR), WireGuard, TLS/HTTPS, Keycloak (RBAC/MFA/Zero-Trust), Suricata (IDS/IPS), AbuseIPDB (Threat Feeds), Nmap</span>
+<span class="content-title">CCTV Cyber Defense - Zero-Trust Surveillance Hardening (Harden the Grid)</span>
+  - <span class="content-header">Award:</span> Consolation Prize Winner (Top 12 / 750+ Teams Nationwide) - MHA, BPR&D & NCRB Hackathon 2.0, New Delhi
+  - <span class="content-header">Description:</span> Implemented a zero-trust architecture for video surveillance streaming via MediaMTX and encrypted RTSP feeds. Deployed active IDS/IPS anomaly detection to mitigate camera node hijacking and MITM vectors, and validated detection and response by simulating RTSP hijacking, credential brute-forcing, and MITM attacks in controlled environments.
+  - <span class="content-header">Tools & Technologies:</span> <span class="content-tech">Python, RTSP, MediaMTX, Suricata (IDS/IPS), VPN/TLS</span>
 `
                         },
                         'book-recommender.txt': {
@@ -597,6 +651,7 @@ Available commands:
   <span class="command-highlight">skills</span>          - View my technical skills (equivalent to 'cat /skills.txt')
   <span class="command-highlight">projects</span>        - See my work (equivalent to 'ls /projects')
   <span class="command-highlight">internships</span>     - View my internship experiences (equivalent to 'ls /internships')
+  <span class="command-highlight">research</span>        - Papers and patent (equivalent to 'cat /research.txt')
   <span class="command-highlight">certifications</span>  - See my earned certifications (equivalent to 'cat /certifications.txt')
   <span class="command-highlight">education</span>       - View my academic background (equivalent to 'cat /education.txt')
   <span class="command-highlight">extracurricular</span> - Explore my activities outside academics (equivalent to 'cat /extracurricular.txt')
@@ -621,6 +676,8 @@ Available commands:
                     return await processCommand('cat /skills.txt');
                 case 'certifications':
                     return await processCommand('cat /certifications.txt');
+                case 'research':
+                    return await processCommand('cat /research.txt');
                 case 'projects':
                     return await processCommand('ls /projects');
                 case 'extracurricular':
