@@ -1,46 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purva - Terminal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
-     <link rel="icon" type="image/jpeg" href="favicon.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purva Nalawade - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- This section will be hidden by default with CSS and shown by JavaScript -->
-    <div id="terminal-container" class="hidden">
-        <div id="terminal-banner">
-            <!-- Dynamic content (hostname, time) will be inserted here by JS -->
-        </div>
-        <!-- This is where all history (ASCII, welcome, commands, output, and current input) will go -->
-        <pre id="output"></pre> 
-        <!-- We keep a hidden input for better mobile support / copy-paste functionality -->
-        <!-- The actual input is simulated in #output -->
+  <section id="home">
+    <h1>Hi, I'm Purva Nalawade</h1>
+    <p>Cybersecurity Enthusiast | Event Manager | Developer</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate second-year cybersecurity student with a keen interest in learning and exploring new technologies.</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-card">
+      <h3>Project 1</h3>
+      <p>Description of your first project.</p>
     </div>
+    <div class="project-card">
+      <h3>Project 2</h3>
+      <p>Description of your second project.</p>
+    </div>
+    <!-- Add more projects as needed -->
+  </section>
 
-    <!-- This content will ONLY be displayed if JavaScript is disabled -->
-    <noscript>
-        <div id="noscript-message">
-            <h1>Common now mate, don't pen test me.</h1>
-            <p>Switch Javascript back on.</p>
-            <pre>
-                ┏┳ • ┏┓• ┓ ┏┓ • •
-                ┃┏┓┏┓┓┏┏┓╋
-                ┗┓┓┏┓┏┓┣┓
-                ┗┓┏┓┓┏┓┓
-                ┗┛┗┻┛┃┗┫┗┛┗
-                ┗┛┗┻┗┛┗┗
-                ┛ ┛ ┛
-            </pre>
-            
-            <p>Please enable JavaScript to view this interactive portfolio.</p>
-        </div>
-    </noscript>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-    <!-- Your JavaScript file goes here -->
-    <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2026 Purva Nalawade</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
